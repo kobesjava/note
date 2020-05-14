@@ -1,0 +1,10 @@
+volatile
+1.保证可见性
+2.禁止指令重排序 DCL(jvm要求底层loadfence原语 storefence原实现)
+
+hotspot底层实现 非常懒 直接lock
+
+CPU的实现
+1.最粗暴 锁总线
+2.MESI缓存一致性(intel x86平台实现)
+cache line 64字节(折中值) 每次去主内存读数据至少会读一个cache line大小的数据
