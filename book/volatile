@@ -3,6 +3,7 @@ volatile
 2.禁止指令重排序 DCL(jvm要求底层loadfence原语 storefence原实现)
 
 hotspot底层实现 非常懒 直接lock
+https://github.com/kobesjava/note/blob/master/image/volatile1.png
 
 CPU的实现
 1.最粗暴 锁总线
